@@ -804,20 +804,46 @@
       </div>
     </div>
     <div class="reveal">
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form action="https://formsubmit.co/rizaanmogral@gmail.com"
+            method="POST"
+            class="contact-form">
+    
+        <!-- Disable captcha (optional) -->
+        <input type="hidden" name="_captcha" value="false">
+    
+        <!-- Redirect after successful submission (optional) -->
+        <input type="hidden" name="_next" value="https://rizaan-portfolio.vercel.app"> 
+    
         <div class="form-group">
-          <label>name</label>
-          <input type="text" placeholder="John Doe" required>
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="John Doe"
+            required>
         </div>
+    
         <div class="form-group">
-          <label>email</label>
-          <input type="email" placeholder="you@company.com" required>
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@company.com"
+            required>
         </div>
+    
         <div class="form-group">
-          <label>message</label>
-          <textarea placeholder="Describe the engagement or opportunity..." required></textarea>
+          <label>Message</label>
+          <textarea
+            name="message"
+            placeholder="Describe the engagement or opportunity..."
+            required></textarea>
         </div>
-        <button type="submit" class="form-submit">$ send --message</button>
+    
+        <button type="submit" class="form-submit">
+          $ send --message
+        </button>
+    
       </form>
     </div>
   </div>
